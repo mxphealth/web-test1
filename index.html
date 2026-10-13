@@ -1,64 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Favicon & app icons -->
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
+  <!-- Favicon & app icons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-
-  <title>MaxproHealth | Health, Wellness, Products & K-Beauty</title>
-
-  <meta
-    name="description"
-    content="MaxproHealth provides practical health information, wellness guides, product insights, and K-Beauty resources to help you make informed everyday choices."
-  >
-
-  <meta
-    name="robots"
-    content="index, follow, max-image-preview:large"
-  >
-
+  <!-- SEO -->
+  <title>MaxproHealth | Health, Wellness, Products &amp; K-Beauty</title>
+  <meta name="description" content="Explore practical health education, wellness guides, product information, and Korean beauty resources at MaxproHealth. Make informed choices with clear, responsible information.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="MaxproHealth">
   <meta name="theme-color" content="#16845b">
   <meta name="color-scheme" content="light dark">
-
-  <link
-    rel="canonical"
-    href="https://maxprohealth.pages.dev/"
-  >
+  <link rel="canonical" href="https://maxprohealth.pages.dev/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta
-    property="og:title"
-    content="MaxproHealth | Health, Wellness, Products & K-Beauty"
-  >
-  <meta
-    property="og:description"
-    content="Practical health information, wellness guides, product insights, and K-Beauty resources."
-  >
-  <meta
-    property="og:url"
-    content="https://maxprohealth.pages.dev/"
-  >
+  <meta property="og:title" content="MaxproHealth | Health, Wellness, Products &amp; K-Beauty">
+  <meta property="og:description" content="Explore practical health education, wellness guides, product information, and Korean beauty resources at MaxproHealth.">
+  <meta property="og:url" content="https://maxprohealth.pages.dev/">
   <meta property="og:site_name" content="MaxproHealth">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
-  <meta
-    name="twitter:title"
-    content="MaxproHealth | Health, Wellness, Products & K-Beauty"
-  >
-  <meta
-    name="twitter:description"
-    content="Practical health information, wellness guides, product insights, and K-Beauty resources."
-  >
+  <meta name="twitter:title" content="MaxproHealth | Health, Wellness, Products &amp; K-Beauty">
+  <meta name="twitter:description" content="Explore practical health education, wellness guides, product information, and Korean beauty resources at MaxproHealth.">
 
   <style>
     :root {
@@ -101,13 +74,7 @@
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family:
-        Inter,
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
@@ -128,28 +95,23 @@
       -webkit-tap-highlight-color: transparent;
     }
 
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+
     .mxp-container {
       width: min(var(--max), calc(100% - 40px));
       margin-inline: auto;
     }
 
-    /* =========================================================
-       HERO
-    ========================================================= */
-
+    /* HERO */
     .mxp-hero {
       padding: 90px 0 75px;
       background:
-        radial-gradient(
-          circle at 90% 20%,
-          rgba(22, 132, 91, 0.10),
-          transparent 30%
-        ),
-        linear-gradient(
-          180deg,
-          var(--surface),
-          var(--bg)
-        );
+        radial-gradient(circle at 90% 20%, rgba(22, 132, 91, 0.10), transparent 30%),
+        linear-gradient(180deg, var(--surface), var(--bg));
     }
 
     .mxp-hero-grid {
@@ -213,10 +175,7 @@
       text-decoration: none;
       font-weight: 750;
       font-size: 0.94rem;
-      transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        border-color 0.2s ease;
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
     }
 
     .mxp-button:hover {
@@ -242,10 +201,7 @@
       border-color: var(--accent);
     }
 
-    /* =========================================================
-       HERO CARD
-    ========================================================= */
-
+    /* HERO CARD */
     .mxp-hero-card {
       position: relative;
       min-height: 390px;
@@ -295,10 +251,7 @@
       color: var(--muted);
     }
 
-    /* =========================================================
-       SECTIONS
-    ========================================================= */
-
+    /* SECTIONS */
     .mxp-section {
       padding: 85px 0;
     }
@@ -320,10 +273,7 @@
       color: var(--muted);
     }
 
-    /* =========================================================
-       CARDS
-    ========================================================= */
-
+    /* CARDS */
     .mxp-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -335,10 +285,7 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       background: var(--bg);
-      transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        border-color 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
 
     .mxp-card:hover {
@@ -383,10 +330,7 @@
       text-decoration: underline;
     }
 
-    /* =========================================================
-       FEATURE
-    ========================================================= */
-
+    /* FEATURE */
     .mxp-feature {
       padding: 85px 0;
       background: var(--surface);
@@ -446,12 +390,7 @@
       flex-direction: column;
       justify-content: flex-end;
       border-radius: 28px;
-      background:
-        linear-gradient(
-          145deg,
-          var(--surface-2),
-          var(--bg)
-        );
+      background: linear-gradient(145deg, var(--surface-2), var(--bg));
       border: 1px solid var(--border);
       box-shadow: var(--shadow);
     }
@@ -466,10 +405,7 @@
       color: var(--muted);
     }
 
-    /* =========================================================
-       CTA
-    ========================================================= */
-
+    /* CTA */
     .mxp-cta {
       padding: 85px 0;
     }
@@ -501,12 +437,8 @@
       color: var(--accent-dark);
     }
 
-    /* =========================================================
-       RESPONSIVE
-    ========================================================= */
-
+    /* RESPONSIVE */
     @media (max-width: 900px) {
-
       .mxp-hero-grid,
       .mxp-feature-grid {
         grid-template-columns: 1fr;
@@ -523,7 +455,6 @@
     }
 
     @media (max-width: 600px) {
-
       .mxp-container {
         width: min(100% - 28px, var(--max));
       }
@@ -558,11 +489,9 @@
       .mxp-button {
         width: 100%;
       }
-
     }
 
     @media (prefers-reduced-motion: reduce) {
-
       html {
         scroll-behavior: auto;
       }
@@ -586,15 +515,13 @@
           (
             !savedTheme &&
             window.matchMedia &&
-            window.matchMedia(
-              "(prefers-color-scheme: dark)"
-            ).matches
+            window.matchMedia("(prefers-color-scheme: dark)").matches
           )
         ) {
           document.documentElement.classList.add("dark");
         }
       } catch (error) {
-        console.warn("MaxproHealth theme initialization failed.");
+        /* Continue using the default theme if storage is unavailable. */
       }
     })();
   </script>
@@ -606,527 +533,314 @@
     "@type": "WebSite",
     "name": "MaxproHealth",
     "url": "https://maxprohealth.pages.dev/",
-    "description": "Health information, wellness guides, product insights and K-Beauty resources.",
-    "inLanguage": [
-      "en",
-      "es",
-      "ar",
-      "ko",
-      "ru",
-      "fr"
-    ]
+    "description": "Practical health education, wellness guides, product information, and Korean beauty resources.",
+    "inLanguage": ["en", "es", "ar", "ko", "ru", "fr"]
   }
   </script>
-
 </head>
 
 <body>
-
   <!-- Global Header -->
   <div id="mxp-header"></div>
 
   <main>
-
-    <!-- =======================================================
-         HERO
-    ======================================================== -->
-
-    <section class="mxp-hero">
+    <!-- HERO -->
+    <section class="mxp-hero" aria-labelledby="home-title">
       <div class="mxp-container mxp-hero-grid">
-
         <div>
+          <div class="mxp-eyebrow">Health • Wellness • Beauty</div>
 
-          <div class="mxp-eyebrow">
-            Health • Wellness • Beauty
-          </div>
-
-          <h1>
+          <h1 id="home-title">
             Better information for
             <span>better choices.</span>
           </h1>
 
           <p class="mxp-hero-text">
-            Explore practical health information, wellness guides,
-            product insights, and K-Beauty resources designed to help
-            you make more informed everyday decisions.
+            Explore practical health education, wellness guidance, product
+            information, and Korean beauty resources. Find clear starting points
+            for researching your options and making informed everyday choices.
           </p>
 
           <div class="mxp-buttons">
-
-            <a
-              class="mxp-button mxp-button-primary"
-              href="/health">
+            <a class="mxp-button mxp-button-primary" href="/health">
               Explore Health
             </a>
 
-            <a
-              class="mxp-button mxp-button-secondary"
-              href="/products">
+            <a class="mxp-button mxp-button-secondary" href="/products">
               Explore Products
             </a>
-
           </div>
-
         </div>
 
         <div class="mxp-hero-card">
+          <div class="mxp-hero-icon" aria-hidden="true">+</div>
 
-          <div
-            class="mxp-hero-icon"
-            aria-hidden="true">
-            +
-          </div>
-
-          <h2>
-            Knowledge before choices
-          </h2>
+          <h2>Knowledge before choices</h2>
 
           <p>
-            Discover clear, practical resources covering health,
-            wellness, products, and modern beauty.
+            Understand the basics, consider your options, and explore resources
+            at your own pace. Health information is provided for general
+            educational purposes and does not replace advice from a qualified
+            healthcare professional.
           </p>
-
         </div>
-
       </div>
     </section>
 
-    <!-- =======================================================
-         EXPLORE
-    ======================================================== -->
-
-    <section
-      class="mxp-section"
-      aria-labelledby="explore-title">
-
+    <!-- EXPLORE -->
+    <section class="mxp-section" aria-labelledby="explore-title">
       <div class="mxp-container">
-
         <div class="mxp-section-header">
-
-          <h2 id="explore-title">
-            Explore MaxproHealth
-          </h2>
+          <h2 id="explore-title">Explore MaxproHealth</h2>
 
           <p>
-            Focused resources make it easier to find the
-            information and resources you're looking for.
+            Start with the area that interests you. Each section helps you find
+            relevant information and resources without unnecessary complexity.
           </p>
-
         </div>
 
         <div class="mxp-grid">
-
           <article class="mxp-card">
-
-            <div
-              class="mxp-card-icon"
-              aria-hidden="true">
-              H
-            </div>
+            <div class="mxp-card-icon" aria-hidden="true">H</div>
 
             <h3>Health</h3>
 
             <p>
-              Educational articles, practical guides, wellness topics,
-              and useful information for everyday health decisions.
+              Explore health and wellness topics in plain language. Build
+              background knowledge, identify useful questions, and discuss
+              personal health concerns with a qualified healthcare professional.
             </p>
 
-            <a
-              class="mxp-card-link"
-              href="/health">
-              Visit Health →
-            </a>
-
+            <a class="mxp-card-link" href="/health">Visit Health →</a>
           </article>
 
           <article class="mxp-card">
-
-            <div
-              class="mxp-card-icon"
-              aria-hidden="true">
-              P
-            </div>
+            <div class="mxp-card-icon" aria-hidden="true">P</div>
 
             <h3>Products</h3>
 
             <p>
-              Explore product categories, useful product information,
-              comparisons, and carefully presented recommendations.
+              Browse product categories and learn what to consider before
+              choosing. Review product details, suitability, costs, and available
+              evidence rather than relying on a single claim or recommendation.
             </p>
 
-            <a
-              class="mxp-card-link"
-              href="/products">
-              Explore Products →
-            </a>
-
+            <a class="mxp-card-link" href="/products">Explore Products →</a>
           </article>
 
           <article class="mxp-card">
-
-            <div
-              class="mxp-card-icon"
-              aria-hidden="true">
-              K
-            </div>
+            <div class="mxp-card-icon" aria-hidden="true">K</div>
 
             <h3>K-Beauty</h3>
 
             <p>
-              Discover Korean beauty concepts, skincare information,
-              routines, ingredients, and product-focused resources.
+              Explore Korean skincare and beauty resources, including common
+              ingredients and routine considerations. Take your skin type,
+              sensitivities, and product instructions into account.
             </p>
 
-            <a
-              class="mxp-card-link"
-              href="/k-beauty">
-              Explore K-Beauty →
-            </a>
-
+            <a class="mxp-card-link" href="/k-beauty">Explore K-Beauty →</a>
           </article>
-
         </div>
-
       </div>
     </section>
 
-    <!-- =======================================================
-         OUR APPROACH
-    ======================================================== -->
-
-    <section
-      class="mxp-feature"
-      aria-labelledby="knowledge-title">
-
+    <!-- OUR APPROACH -->
+    <section class="mxp-feature" aria-labelledby="knowledge-title">
       <div class="mxp-container mxp-feature-grid">
-
         <div class="mxp-feature-content">
-
-          <div class="mxp-eyebrow">
-            Our approach
-          </div>
+          <div class="mxp-eyebrow">Our approach</div>
 
           <h2 id="knowledge-title">
             Useful information without unnecessary complexity.
           </h2>
 
           <p>
-            MaxproHealth is designed around accessible information,
-            practical education, and easier discovery.
+            MaxproHealth brings health education, product discovery, and beauty
+            resources together in one place. Our goal is to help visitors
+            navigate information and consider their options—not to promise
+            outcomes or replace individualized professional advice.
           </p>
 
           <ul class="mxp-list">
-
             <li>
-              <span
-                class="mxp-check"
-                aria-hidden="true">
-                ✓
-              </span>
-
+              <span class="mxp-check" aria-hidden="true">✓</span>
               <span>
-                Clear and easy-to-understand educational content.
+                Plain-language explanations that make unfamiliar topics easier
+                to understand.
               </span>
             </li>
 
             <li>
-              <span
-                class="mxp-check"
-                aria-hidden="true">
-                ✓
-              </span>
-
+              <span class="mxp-check" aria-hidden="true">✓</span>
               <span>
-                Organized resources that are easy to explore.
+                Clearly organized sections to help visitors find relevant
+                information more efficiently.
               </span>
             </li>
 
             <li>
-              <span
-                class="mxp-check"
-                aria-hidden="true">
-                ✓
-              </span>
-
+              <span class="mxp-check" aria-hidden="true">✓</span>
               <span>
-                Health and wellness topics presented responsibly.
+                Responsible health information that encourages informed
+                questions and careful decisions.
               </span>
             </li>
 
             <li>
-              <span
-                class="mxp-check"
-                aria-hidden="true">
-                ✓
-              </span>
-
+              <span class="mxp-check" aria-hidden="true">✓</span>
               <span>
-                A modern experience across mobile and desktop devices.
+                A responsive browsing experience across phones, tablets, and
+                desktop screens.
               </span>
             </li>
-
           </ul>
 
-          <a
-            class="mxp-button mxp-button-primary"
-            href="/health">
+          <a class="mxp-button mxp-button-primary" href="/health">
             Browse Health Guides
           </a>
-
         </div>
 
         <div class="mxp-feature-panel">
-
-          <strong>
-            Health + Products + Beauty
-          </strong>
+          <strong>Health + Products + Beauty</strong>
 
           <span>
-            One modern destination for discovering useful information
-            and resources.
+            Explore information at your own pace, compare options carefully,
+            and consider your individual needs before making decisions.
           </span>
-
         </div>
-
       </div>
     </section>
 
-    <!-- =======================================================
-         KNOWLEDGE CENTER
-    ======================================================== -->
-
-    <section
-      class="mxp-section"
-      aria-labelledby="guides-title">
-
+    <!-- KNOWLEDGE CENTER -->
+    <section class="mxp-section" aria-labelledby="guides-title">
       <div class="mxp-container">
-
         <div class="mxp-section-header">
+          <div class="mxp-eyebrow">Knowledge center</div>
 
-          <div class="mxp-eyebrow">
-            Knowledge center
-          </div>
-
-          <h2 id="guides-title">
-            Start exploring
-          </h2>
+          <h2 id="guides-title">Find your next starting point</h2>
 
           <p>
-            Our Health section will grow into an organized library
-            of articles and practical guides.
+            Use these sections to explore health education, understand product
+            categories, and learn more about Korean skincare and beauty.
           </p>
-
         </div>
 
         <div class="mxp-grid">
-
           <article class="mxp-card">
+            <div class="mxp-card-icon" aria-hidden="true">01</div>
 
-            <div
-              class="mxp-card-icon"
-              aria-hidden="true">
-              01
-            </div>
-
-            <h3>
-              Health Guides
-            </h3>
+            <h3>Health Guides</h3>
 
             <p>
-              Educational content organized around useful health
-              and wellness topics.
+              Explore health and wellness topics, learn the fundamentals, and
+              identify questions you may wish to discuss with a qualified
+              healthcare professional.
             </p>
 
-            <a
-              class="mxp-card-link"
-              href="/health">
-              Read Guides →
-            </a>
-
+            <a class="mxp-card-link" href="/health">Read Health Guides →</a>
           </article>
 
           <article class="mxp-card">
+            <div class="mxp-card-icon" aria-hidden="true">02</div>
 
-            <div
-              class="mxp-card-icon"
-              aria-hidden="true">
-              02
-            </div>
-
-            <h3>
-              Product Information
-            </h3>
+            <h3>Product Information</h3>
 
             <p>
-              Learn about products and categories before deciding
-              what may be suitable for your needs.
+              Review product categories and practical considerations before
+              deciding whether an option suits your preferences, needs, and budget.
             </p>
 
-            <a
-              class="mxp-card-link"
-              href="/products">
-              View Products →
-            </a>
-
+            <a class="mxp-card-link" href="/products">View Product Categories →</a>
           </article>
 
           <article class="mxp-card">
+            <div class="mxp-card-icon" aria-hidden="true">03</div>
 
-            <div
-              class="mxp-card-icon"
-              aria-hidden="true">
-              03
-            </div>
-
-            <h3>
-              K-Beauty Resources
-            </h3>
+            <h3>K-Beauty Resources</h3>
 
             <p>
-              Explore Korean skincare, beauty ingredients, routines,
-              and related product information.
+              Learn about skincare ingredients and routines. Check product
+              instructions and consider your skin's needs and sensitivities.
             </p>
 
-            <a
-              class="mxp-card-link"
-              href="/k-beauty">
-              Discover K-Beauty →
-            </a>
-
+            <a class="mxp-card-link" href="/k-beauty">Discover K-Beauty →</a>
           </article>
-
         </div>
-
       </div>
     </section>
 
-    <!-- =======================================================
-         CTA
-    ======================================================== -->
-
-    <section class="mxp-cta">
-
+    <!-- FINAL CTA -->
+    <section class="mxp-cta" aria-labelledby="home-cta-title">
       <div class="mxp-container">
-
         <div class="mxp-cta-box">
-
-          <h2>
-            Ready to explore?
-          </h2>
+          <h2 id="home-cta-title">Make your next step an informed one.</h2>
 
           <p>
-            Start with health education, explore products, or discover
-            the world of K-Beauty.
+            Start with health education, explore product categories, or discover
+            Korean skincare resources. Take time to assess information and seek
+            qualified professional advice when a personal health decision requires it.
           </p>
 
-          <a
-            class="mxp-button"
-            href="/health">
-            Explore MaxproHealth
-          </a>
-
+          <a class="mxp-button" href="/health">Explore Health Resources</a>
         </div>
-
       </div>
-
     </section>
-
   </main>
 
   <!-- Global Footer -->
   <div id="mxp-footer"></div>
 
-  <!-- Global Scroll-to-top (scroll-top.html) -->
+  <!-- Global Scroll-to-top -->
   <div id="mxp-scroll-top"></div>
 
-  <!-- =========================================================
-       GLOBAL COMPONENT LOADER
-  ========================================================== -->
-
+  <!-- GLOBAL COMPONENT LOADER -->
   <script>
     async function loadComponent(elementId, file) {
-
-      const element =
-        document.getElementById(elementId);
+      const element = document.getElementById(elementId);
 
       if (!element) {
         return;
       }
 
       try {
-
-        const response =
-          await fetch(file, {
-            cache: "no-cache"
-          });
+        const response = await fetch(file, { cache: "no-cache" });
 
         if (!response.ok) {
-          throw new Error(
-            "Component could not be loaded: " + file
-          );
+          throw new Error("Component could not be loaded: " + file);
         }
 
-        element.innerHTML =
-          await response.text();
+        element.innerHTML = await response.text();
 
         /*
-         * Re-execute scripts contained inside
-         * header.html and footer.html.
+         * Re-execute scripts included in shared components.
+         * Preserve script attributes, including src and type.
          */
+        const scripts = element.querySelectorAll("script");
 
-        const scripts =
-          element.querySelectorAll("script");
+        for (const oldScript of scripts) {
+          const newScript = document.createElement("script");
 
-        scripts.forEach(function (oldScript) {
+          for (const attribute of Array.from(oldScript.attributes)) {
+            newScript.setAttribute(attribute.name, attribute.value);
+          }
 
-          const newScript =
-            document.createElement("script");
-
-          Array.from(
-            oldScript.attributes
-          ).forEach(function (attribute) {
-
-            newScript.setAttribute(
-              attribute.name,
-              attribute.value
-            );
-
-          });
-
-          newScript.textContent =
-            oldScript.textContent;
+          if (!oldScript.src) {
+            newScript.textContent = oldScript.textContent;
+          }
 
           oldScript.replaceWith(newScript);
-
-        });
-
+        }
       } catch (error) {
-
-        console.error(
-          "MaxproHealth component error:",
-          error
-        );
-
+        console.error("MaxproHealth component error:", error);
       }
     }
 
     Promise.all([
-      loadComponent(
-        "mxp-header",
-        "header.html"
-      ),
-
-      loadComponent(
-        "mxp-footer",
-        "footer.html"
-      ),
-
-      loadComponent(
-        "mxp-scroll-top",
-        "scroll-top.html"
-      )
+      loadComponent("mxp-header", "/header.html"),
+      loadComponent("mxp-footer", "/footer.html"),
+      loadComponent("mxp-scroll-top", "/scroll-top.html")
     ]);
   </script>
-
 </body>
 </html>
