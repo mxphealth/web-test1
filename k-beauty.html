@@ -1,36 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Favicon & app icons -->
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 
-
-<title>K-Beauty | Korean Skincare, Beauty & Wellness | MaxproHealth</title>
-
-<meta name="description" content="Explore K-Beauty with MaxproHealth. Discover Korean skincare routines, beauty ingredients, product categories, trends, and practical beauty guides.">
-<meta name="keywords" content="K-Beauty, Korean beauty, Korean skincare, Korean cosmetics, Korean skincare routine, K-Beauty products, Korean beauty ingredients">
+<title>K-Beauty Products &amp; Global Business Partnerships | MaxproHealth</title>
+<meta name="description" content="Explore Korean beauty product categories and connect with MaxproHealth about sourcing, wholesale opportunities, and potential partnerships with Korean manufacturers.">
+<meta name="keywords" content="K-Beauty products, Korean skincare, Korean cosmetics, Korean beauty wholesale, Korean beauty distributor, K-Beauty sourcing, international beauty partnerships">
 <meta name="author" content="MaxproHealth">
 <meta name="robots" content="index, follow, max-image-preview:large">
-
 <link rel="canonical" href="https://maxprohealth.pages.dev/k-beauty">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="K-Beauty | Korean Skincare, Beauty & Wellness | MaxproHealth">
-<meta property="og:description" content="Explore Korean skincare, beauty routines, ingredients, product categories, and K-Beauty guides with MaxproHealth.">
+<meta property="og:title" content="K-Beauty Products &amp; Global Business Partnerships | MaxproHealth">
+<meta property="og:description" content="Explore Korean beauty categories and discuss sourcing and potential business partnerships with Korean manufacturers through MaxproHealth.">
 <meta property="og:url" content="https://maxprohealth.pages.dev/k-beauty">
 <meta property="og:site_name" content="MaxproHealth">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="K-Beauty | MaxproHealth">
-<meta name="twitter:description" content="Explore Korean skincare, beauty ingredients, routines, and K-Beauty guides.">
-
+<meta name="twitter:title" content="K-Beauty Products &amp; Partnerships | MaxproHealth">
+<meta name="twitter:description" content="Explore Korean beauty product categories and international sourcing opportunities with MaxproHealth.">
 <meta name="theme-color" content="#16845b">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,19 +80,12 @@ body {
   padding-top: 74px;
   background: var(--page-bg);
   color: var(--text);
-  font-family:
-    Inter,
-    "Segoe UI",
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    sans-serif;
+  font-family: Inter, "Segoe UI", system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 a {
@@ -139,11 +128,7 @@ a:focus-visible {
 .mxp-hero {
   padding: 88px 0 72px;
   background:
-    radial-gradient(
-      circle at 85% 20%,
-      rgba(22, 132, 91, 0.12),
-      transparent 32%
-    ),
+    radial-gradient(circle at 85% 20%, rgba(22, 132, 91, 0.12), transparent 32%),
     var(--hero-bg);
 }
 
@@ -202,9 +187,7 @@ a:focus-visible {
   background: var(--accent);
   color: #ffffff;
   font-weight: 700;
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .mxp-button:hover {
@@ -340,7 +323,7 @@ html.dark .mxp-card {
   font-weight: 700;
 }
 
-/* ROUTINE */
+/* PARTNERSHIP PROCESS */
 
 .mxp-routine {
   display: grid;
@@ -395,31 +378,6 @@ html.dark .mxp-card {
   color: var(--text);
 }
 
-/* INGREDIENTS */
-
-.mxp-ingredient-grid {
-  display: grid;
-  gap: 14px;
-}
-
-.mxp-ingredient {
-  padding: 21px;
-  border: 1px solid var(--border);
-  border-radius: 15px;
-  background: var(--card-bg);
-}
-
-.mxp-ingredient strong {
-  display: block;
-  margin-bottom: 5px;
-  color: var(--text);
-}
-
-.mxp-ingredient span {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
 /* CTA */
 
 .mxp-cta {
@@ -460,7 +418,7 @@ html.dark .mxp-card {
   color: #0d6846;
 }
 
-/* DISCLAIMER */
+/* POLICY INFORMATION */
 
 .mxp-disclaimer {
   padding: 0 0 60px;
@@ -480,8 +438,23 @@ html.dark .mxp-card {
   color: var(--text);
 }
 
-@media (min-width: 700px) {
+.mxp-smallprint {
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
 
+.mxp-disclaimer-inner a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.mxp-disclaimer-inner a:hover {
+  color: var(--accent-dark);
+}
+
+@media (min-width: 700px) {
   .mxp-container {
     width: min(100% - 48px, 1180px);
   }
@@ -491,27 +464,16 @@ html.dark .mxp-card {
   }
 
   .mxp-hero-grid {
-    grid-template-columns:
-      minmax(0, 1.45fr)
-      minmax(300px, 0.7fr);
+    grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.7fr);
   }
 
   .mxp-grid.three {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .mxp-ingredient-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 980px) {
-
   .mxp-grid.three {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .mxp-ingredient-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
@@ -525,15 +487,27 @@ html.dark .mxp-card {
 }
 
 @media (max-width: 560px) {
-
   body {
     padding-top: 68px;
   }
 
+  .mxp-actions .mxp-button {
+    width: 100%;
+  }
+
+  .mxp-routine-item {
+    grid-template-columns: 36px 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .mxp-routine-number {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   html {
     scroll-behavior: auto;
   }
@@ -550,9 +524,9 @@ html.dark .mxp-card {
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "K-Beauty",
+  "name": "K-Beauty Products and Business Partnerships",
   "url": "https://maxprohealth.pages.dev/k-beauty",
-  "description": "Korean skincare, beauty ingredients, routines, product categories and K-Beauty educational guides.",
+  "description": "Explore Korean beauty product categories and contact MaxproHealth about potential sourcing, wholesale, and international distribution partnerships.",
   "isPartOf": {
     "@type": "WebSite",
     "name": "MaxproHealth",
@@ -565,7 +539,6 @@ html.dark .mxp-card {
 }
 </script>
 
-<!-- Apply saved theme BEFORE page rendering -->
 <script>
 (function () {
   try {
@@ -582,583 +555,309 @@ html.dark .mxp-card {
       document.documentElement.classList.add("dark");
     }
   } catch (error) {
-    /* Fail safely if localStorage is unavailable. */
+    /* Continue if localStorage is unavailable. */
   }
 })();
 </script>
-
 </head>
 
 <body>
 
-<!-- Shared Header -->
 <div id="site-header"></div>
 
 <main class="mxp-main">
 
-  <!-- HERO -->
   <section class="mxp-hero">
     <div class="mxp-container">
       <div class="mxp-hero-grid">
-
         <div>
-          <p class="mxp-eyebrow">K-Beauty • Korean Beauty</p>
-
-          <h1>K-Beauty, Korean Skincare &amp; Modern Beauty</h1>
-
+          <p class="mxp-eyebrow">K-Beauty · Korean Beauty Products</p>
+          <h1>Discover Korean Beauty. Build Global Connections.</h1>
           <p class="mxp-hero-text">
-            Explore the ideas, routines, ingredients and product categories
-            behind Korean beauty. MaxproHealth provides practical,
-            easy-to-understand information to help you make informed
-            skincare and beauty choices.
+            Explore Korean skincare and cosmetics by product category. MaxproHealth is also developing business connections between Korean beauty manufacturers and international distributors, retailers, and other qualified buyers.
           </p>
-
           <div class="mxp-actions">
-            <a class="mxp-button" href="#categories">
-              Explore K-Beauty
-            </a>
-
-            <a class="mxp-button secondary" href="/health">
-              Health Guides
-            </a>
+            <a class="mxp-button" href="#product-categories">Explore Product Categories</a>
+            <a class="mxp-button secondary" href="#business-partnerships">Business Partnerships</a>
           </div>
         </div>
 
         <aside class="mxp-hero-card">
           <div class="mxp-hero-card-icon" aria-hidden="true">✦</div>
-
-          <h2>Simple, informed beauty care</h2>
-
+          <h2>Beauty products and business opportunities</h2>
           <p>
-            K-Beauty is often associated with hydration, layered care,
-            ingredient-focused products and consistent routines. A routine
-            does not need to contain many products to be useful.
+            Our goal is to help visitors explore Korean beauty products and help interested businesses start conversations about sourcing, wholesale supply, and long-term manufacturer–buyer relationships.
           </p>
         </aside>
-
       </div>
     </div>
   </section>
 
-  <!-- INTRODUCTION -->
-  <section class="mxp-section">
+  <section class="mxp-section" id="product-categories">
     <div class="mxp-container">
-
       <div class="mxp-section-heading">
-        <h2>What is K-Beauty?</h2>
-
+        <h2>Explore K-Beauty product categories</h2>
         <p>
-          K-Beauty refers broadly to Korean skincare, cosmetics and beauty
-          culture. Korean beauty has developed a strong international
-          following through its focus on skincare, product innovation,
-          ingredients and adaptable routines.
+          Browse common Korean beauty product categories. Specific brands, product availability, wholesale pricing, and order terms depend on the manufacturer and market.
         </p>
       </div>
 
       <div class="mxp-grid three">
-
         <article class="mxp-card">
           <div class="mxp-card-icon" aria-hidden="true">01</div>
-
-          <h3>Skin-first approach</h3>
-
-          <p>
-            Many Korean beauty routines place skincare before makeup,
-            with emphasis on cleansing, hydration and maintaining
-            comfortable-looking skin.
-          </p>
+          <h3>Cleansers &amp; Makeup Removers</h3>
+          <p>Oil cleansers, cleansing balms, foam cleansers, and products designed to remove makeup, sunscreen, and everyday buildup.</p>
         </article>
 
         <article class="mxp-card">
           <div class="mxp-card-icon" aria-hidden="true">02</div>
-
-          <h3>Ingredient awareness</h3>
-
-          <p>
-            K-Beauty products commonly highlight specific ingredients
-            and textures, making ingredient literacy useful when
-            comparing products.
-          </p>
+          <h3>Toners &amp; Essences</h3>
+          <p>Lightweight skincare products developed for hydration, skin comfort, and use within different skincare routines.</p>
         </article>
 
         <article class="mxp-card">
           <div class="mxp-card-icon" aria-hidden="true">03</div>
-
-          <h3>Flexible routines</h3>
-
-          <p>
-            A Korean-inspired routine can be simple or layered. The best
-            routine depends on individual skin needs, preferences and
-            product tolerance.
-          </p>
+          <h3>Serums &amp; Ampoules</h3>
+          <p>Concentrated skincare formulations featuring ingredients selected for particular cosmetic purposes.</p>
         </article>
 
+        <article class="mxp-card">
+          <div class="mxp-card-icon" aria-hidden="true">04</div>
+          <h3>Moisturizers &amp; Masks</h3>
+          <p>Creams, gels, sleeping masks, and sheet masks for different preferences, skin types, and climates.</p>
+        </article>
+
+        <article class="mxp-card">
+          <div class="mxp-card-icon" aria-hidden="true">05</div>
+          <h3>Sunscreen</h3>
+          <p>Sun-protection products in a range of textures and formats. Buyers should verify the requirements for each destination market.</p>
+        </article>
+
+        <article class="mxp-card">
+          <div class="mxp-card-icon" aria-hidden="true">06</div>
+          <h3>Makeup &amp; Color Cosmetics</h3>
+          <p>Cushion foundations, lip products, complexion cosmetics, eye makeup, and other Korean beauty categories.</p>
+        </article>
+
+        <article class="mxp-card">
+          <div class="mxp-card-icon" aria-hidden="true">07</div>
+          <h3>Hair &amp; Body Care</h3>
+          <p>Shampoos, conditioners, scalp-care products, body cleansers, lotions, and related personal-care items.</p>
+        </article>
+
+        <article class="mxp-card">
+          <div class="mxp-card-icon" aria-hidden="true">08</div>
+          <h3>Beauty Tools &amp; Accessories</h3>
+          <p>Selected beauty accessories and tools, subject to product availability and the manufacturer's range.</p>
+        </article>
+
+        <article class="mxp-card">
+          <div class="mxp-card-icon" aria-hidden="true">09</div>
+          <h3>Manufacturer Product Ranges</h3>
+          <p>For business inquiries, contact us with the product type, brand, target country, and approximate order needs you have in mind.</p>
+          <a class="mxp-card-link" href="/contact">Send a product inquiry →</a>
+        </article>
+      </div>
+
+      <div class="mxp-note">
+        <strong>Product availability:</strong> This page introduces product categories, not a guarantee of current stock or an existing authorized-distributor relationship. Specific products and commercial terms must be confirmed with the relevant manufacturer.
       </div>
     </div>
   </section>
 
-  <!-- CATEGORIES -->
-  <section class="mxp-section alt" id="categories">
+  <section class="mxp-section alt" id="business-partnerships">
     <div class="mxp-container">
-
       <div class="mxp-section-heading">
-        <h2>K-Beauty product categories</h2>
-
+        <h2>International K-Beauty business partnerships</h2>
         <p>
-          Start with the category that matches what you want to learn about.
-          Product categories can overlap, and a complete routine is not
-          required for everyone.
+          MaxproHealth is exploring a business-facilitation model designed to connect Korean beauty manufacturers with potential international buyers and distribution partners. We aim to support clear communication and long-term business relationships.
         </p>
       </div>
 
       <div class="mxp-grid three">
-
-        <article class="mxp-card">
-          <div class="mxp-card-icon" aria-hidden="true">C</div>
-
-          <h3>Cleansers</h3>
-
-          <p>
-            Learn about cleansing oils, balms, water-based cleansers and
-            how cleansing fits into a practical skincare routine.
-          </p>
-        </article>
-
-        <article class="mxp-card">
-          <div class="mxp-card-icon" aria-hidden="true">T</div>
-
-          <h3>Toners &amp; Essences</h3>
-
-          <p>
-            Discover how lightweight hydrating products can be incorporated
-            into a routine without unnecessarily adding steps.
-          </p>
-        </article>
-
-        <article class="mxp-card">
-          <div class="mxp-card-icon" aria-hidden="true">S</div>
-
-          <h3>Serums &amp; Ampoules</h3>
-
-          <p>
-            Explore concentrated skincare products and how to compare
-            ingredients, textures and intended cosmetic uses.
-          </p>
-        </article>
-
         <article class="mxp-card">
           <div class="mxp-card-icon" aria-hidden="true">M</div>
-
-          <h3>Moisturizers</h3>
-
-          <p>
-            Learn about creams, gels, lotions and other products designed
-            to support comfortable, hydrated-looking skin.
-          </p>
+          <h3>For Korean Manufacturers</h3>
+          <p>Explore opportunities to introduce product ranges to potential overseas distributors, importers, retailers, and other business buyers.</p>
+          <a class="mxp-card-link" href="/contact">Manufacturer inquiry →</a>
         </article>
 
         <article class="mxp-card">
-          <div class="mxp-card-icon" aria-hidden="true">U</div>
-
-          <h3>Sunscreen</h3>
-
-          <p>
-            Understand the role of daily sun protection and how sunscreen
-            fits into a morning skincare routine.
-          </p>
+          <div class="mxp-card-icon" aria-hidden="true">D</div>
+          <h3>For Distributors &amp; Importers</h3>
+          <p>Share your target market, sales channels, product interests, and approximate purchasing capacity so potential supply options can be discussed.</p>
+          <a class="mxp-card-link" href="/contact">Distributor inquiry →</a>
         </article>
 
         <article class="mxp-card">
-          <div class="mxp-card-icon" aria-hidden="true">B</div>
-
-          <h3>Beauty &amp; Makeup</h3>
-
-          <p>
-            Explore Korean makeup categories including cushions, lip
-            products, complexion products and natural-looking makeup styles.
-          </p>
+          <div class="mxp-card-icon" aria-hidden="true">R</div>
+          <h3>For Retailers &amp; Beauty Businesses</h3>
+          <p>Small retailers, salons, spas, and other suitable businesses may enquire about product ranges and whether manufacturers can support their order needs.</p>
+          <a class="mxp-card-link" href="/contact">Retail business inquiry →</a>
         </article>
-
       </div>
     </div>
   </section>
 
-  <!-- ROUTINE -->
-  <section class="mxp-section" id="routine">
+  <section class="mxp-section" id="partnership-process">
     <div class="mxp-container">
-
       <div class="mxp-section-heading">
-        <h2>A simple Korean-inspired skincare routine</h2>
-
-        <p>
-          You do not need a traditional multi-step routine to benefit from
-          K-Beauty principles. Start with the basics and add products only
-          when there is a clear reason to do so.
-        </p>
+        <h2>How the partnership process may work</h2>
+        <p>The exact process will depend on participating manufacturers, buyer qualifications, product requirements, and the destination market.</p>
       </div>
 
       <div class="mxp-routine">
-
         <article class="mxp-routine-item">
           <div class="mxp-routine-number">1</div>
-
           <div>
-            <h3>Cleanse</h3>
-
-            <p>
-              Remove dirt, sunscreen and makeup using a cleanser appropriate
-              for your skin and the products you have used.
-            </p>
+            <h3>Understand the opportunity</h3>
+            <p>A manufacturer or potential buyer shares its product interests, target country, business profile, and supply expectations.</p>
           </div>
         </article>
 
         <article class="mxp-routine-item">
           <div class="mxp-routine-number">2</div>
-
           <div>
-            <h3>Hydrate</h3>
-
-            <p>
-              Use a toner, essence or another lightweight hydrating product
-              if it suits your routine.
-            </p>
+            <h3>Identify a suitable match</h3>
+            <p>Where a suitable opportunity exists, MaxproHealth may help introduce the parties and coordinate initial business discussions.</p>
           </div>
         </article>
 
         <article class="mxp-routine-item">
           <div class="mxp-routine-number">3</div>
-
           <div>
-            <h3>Treat</h3>
-
-            <p>
-              Add a serum or targeted cosmetic product when there is a
-              specific skincare goal and the formulation is appropriate
-              for your skin.
-            </p>
+            <h3>Discuss wholesale terms directly</h3>
+            <p>The manufacturer and buyer can review product selection, pricing, minimum order quantity (MOQ), payment, shipping, and repeat-order terms.</p>
           </div>
         </article>
 
         <article class="mxp-routine-item">
           <div class="mxp-routine-number">4</div>
-
           <div>
-            <h3>Moisturize</h3>
-
-            <p>
-              Finish with a moisturizer suited to your skin type and
-              climate to help maintain comfortable-looking skin.
-            </p>
+            <h3>Confirm the arrangement in writing</h3>
+            <p>Any distribution authorization, exclusivity, labeling, order obligations, and other commercial terms must be agreed by the relevant parties before being represented as confirmed.</p>
           </div>
         </article>
-
-        <article class="mxp-routine-item">
-          <div class="mxp-routine-number">5</div>
-
-          <div>
-            <h3>Protect</h3>
-
-            <p>
-              In the morning, finish with broad-spectrum sunscreen and
-              follow the product directions for application and
-              reapplication.
-            </p>
-          </div>
-        </article>
-
       </div>
 
       <div class="mxp-note">
-        <strong>Keep it practical:</strong>
-        More products do not automatically mean better skincare.
-        Introduce new products gradually and stop using products that
-        cause persistent irritation or discomfort.
-      </div>
-
-    </div>
-  </section>
-
-  <!-- INGREDIENTS -->
-  <section class="mxp-section alt" id="ingredients">
-    <div class="mxp-container">
-
-      <div class="mxp-section-heading">
-        <h2>Popular K-Beauty ingredients</h2>
-
-        <p>
-          Ingredient names can help you understand why a product is marketed
-          for a particular cosmetic purpose. Consider the complete
-          formulation together with your individual skin needs.
-        </p>
-      </div>
-
-      <div class="mxp-ingredient-grid">
-
-        <div class="mxp-ingredient">
-          <strong>Centella asiatica</strong>
-          <span>
-            Commonly used in soothing and skin-comfort-focused formulations.
-          </span>
-        </div>
-
-        <div class="mxp-ingredient">
-          <strong>Green tea</strong>
-          <span>
-            A botanical ingredient frequently featured in Korean skincare.
-          </span>
-        </div>
-
-        <div class="mxp-ingredient">
-          <strong>Ginseng</strong>
-          <span>
-            A traditional Korean ingredient widely incorporated into
-            modern skincare formulations.
-          </span>
-        </div>
-
-        <div class="mxp-ingredient">
-          <strong>Rice</strong>
-          <span>
-            Used in a variety of Korean beauty products and
-            traditional beauty-inspired formulations.
-          </span>
-        </div>
-
-        <div class="mxp-ingredient">
-          <strong>Snail mucin</strong>
-          <span>
-            A well-known K-Beauty cosmetic ingredient used in many
-            hydration-focused formulations.
-          </span>
-        </div>
-
-        <div class="mxp-ingredient">
-          <strong>Fermented ingredients</strong>
-          <span>
-            Fermentation is also used in some cosmetic ingredient
-            technologies and formulations.
-          </span>
-        </div>
-
+        <strong>MaxproHealth's proposed role:</strong> sourcing support, introductions, and business communication. Unless separately agreed in writing, MaxproHealth is not the manufacturer, importer of record, product certifier, or seller of the products, and does not guarantee that a partnership or order will be completed.
       </div>
     </div>
   </section>
 
-  <!-- GUIDES -->
-  <section class="mxp-section">
+  <section class="mxp-section alt" id="local-distribution">
     <div class="mxp-container">
-
       <div class="mxp-section-heading">
-        <h2>Explore K-Beauty guides</h2>
-
+        <h2>Local distribution and labeling opportunities</h2>
         <p>
-          Build your knowledge before choosing products. MaxproHealth
-          focuses on practical information rather than promising
-          guaranteed cosmetic results.
+          One idea for future manufacturer discussions is to make it easier for an approved local partner to distribute products in its market while preserving the original brand identity.
         </p>
       </div>
 
       <div class="mxp-grid three">
+        <article class="mxp-card">
+          <div class="mxp-card-icon" aria-hidden="true">01</div>
+          <h3>Local distributor identification</h3>
+          <p>Where the manufacturer agrees and local rules allow it, packaging may identify the approved local distributor or importer, for example, “Distributed by [Company Name], [Country].”</p>
+        </article>
 
         <article class="mxp-card">
+          <div class="mxp-card-icon" aria-hidden="true">02</div>
+          <h3>Manufacturer-approved orders</h3>
+          <p>MOQ, mixed-product orders, wholesale pricing, and delivery terms should be confirmed with each manufacturer. Small-business options depend on the supplier's capabilities.</p>
+        </article>
+
+        <article class="mxp-card">
+          <div class="mxp-card-icon" aria-hidden="true">03</div>
+          <h3>Country-specific compliance</h3>
+          <p>Any relabeling, language requirements, importer details, product registration, and claims must be reviewed for the destination market before products are supplied.</p>
+        </article>
+      </div>
+
+      <p class="mxp-smallprint">
+        The labeling and distribution concept is preliminary. It is not a claim that any manufacturer has approved it or that any product currently has a local distributor.
+      </p>
+    </div>
+  </section>
+
+  <section class="mxp-section" id="beauty-guides">
+    <div class="mxp-container">
+      <div class="mxp-section-heading">
+        <h2>Learn about Korean beauty</h2>
+        <p>Alongside product discovery, explore practical information about common product types, ingredients, and skincare routines.</p>
+      </div>
+
+      <div class="mxp-grid three">
+        <article class="mxp-card">
           <div class="mxp-card-icon" aria-hidden="true">R</div>
-
-          <h3>Skincare routines</h3>
-
-          <p>
-            Learn how to build a simple morning and evening routine
-            without adding unnecessary steps.
-          </p>
-
-          <a class="mxp-card-link" href="#routine">
-            View routine guide →
-          </a>
+          <h3>Simple skincare routines</h3>
+          <p>Learn about cleansing, moisturizing, sun protection, and how to avoid adding unnecessary steps to a routine.</p>
+          <a class="mxp-card-link" href="#product-categories">Explore product types →</a>
         </article>
 
         <article class="mxp-card">
           <div class="mxp-card-icon" aria-hidden="true">I</div>
-
-          <h3>Ingredient education</h3>
-
-          <p>
-            Understand common K-Beauty ingredients, their intended
-            cosmetic roles and how to read product labels.
-          </p>
-
-          <a class="mxp-card-link" href="#ingredients">
-            Explore ingredients →
-          </a>
+          <h3>Ingredient awareness</h3>
+          <p>Understand common cosmetic ingredients and review product labels and instructions before making a choice.</p>
+          <a class="mxp-card-link" href="/health">Explore health information →</a>
         </article>
 
         <article class="mxp-card">
           <div class="mxp-card-icon" aria-hidden="true">P</div>
-
-          <h3>Product discovery</h3>
-
-          <p>
-            Browse the MaxproHealth product section for additional
-            product information and category-based resources.
-          </p>
-
-          <a class="mxp-card-link" href="/products">
-            Explore products →
-          </a>
+          <h3>More product resources</h3>
+          <p>Explore other product categories and wellness resources available across MaxproHealth.</p>
+          <a class="mxp-card-link" href="/products">Explore products →</a>
         </article>
-
       </div>
     </div>
   </section>
 
-  <!-- INDUSTRY -->
-  <section class="mxp-section alt">
-    <div class="mxp-container">
-
-      <div class="mxp-section-heading">
-        <h2>K-Beauty beyond skincare</h2>
-
-        <p>
-          Korean beauty has developed into a broad international industry
-          spanning skincare, cosmetics, hair care, body care and beauty
-          culture.
-        </p>
-      </div>
-
-      <div class="mxp-grid three">
-
-        <article class="mxp-card">
-          <div class="mxp-card-icon" aria-hidden="true">K</div>
-
-          <h3>Korean beauty brands</h3>
-
-          <p>
-            Explore characteristics, product categories and formulation
-            approaches commonly found across Korean beauty brands.
-          </p>
-        </article>
-
-        <article class="mxp-card">
-          <div class="mxp-card-icon" aria-hidden="true">G</div>
-
-          <h3>Global K-Beauty</h3>
-
-          <p>
-            Learn how Korean beauty products and trends have reached
-            consumers in markets around the world.
-          </p>
-        </article>
-
-        <article class="mxp-card">
-          <div class="mxp-card-icon" aria-hidden="true">S</div>
-
-          <h3>Suppliers &amp; sourcing</h3>
-
-          <p>
-            Discover information relevant to international businesses
-            interested in Korean beauty products and supply opportunities.
-          </p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
   <section class="mxp-cta">
     <div class="mxp-container">
-
       <div class="mxp-cta-box">
-
-        <h2>
-          Discover more health, wellness and beauty information
-        </h2>
-
-        <p>
-          Continue exploring MaxproHealth for educational health guides,
-          product information and practical resources.
-        </p>
-
+        <h2>Interested in Korean beauty products or a business partnership?</h2>
+        <p>Contact MaxproHealth and select “K-Beauty / Supplier Inquiry” or “Business Partnership” on the contact form. Include your company, country, product interests, and the type of opportunity you want to discuss.</p>
         <div class="mxp-actions">
-
-          <a class="mxp-button" href="/">
-            Visit Home
-          </a>
-
-          <a class="mxp-button" href="/health">
-            Explore Health
-          </a>
-
-          <a class="mxp-button" href="/products">
-            View Products
-          </a>
-
+          <a class="mxp-button" href="/contact">Contact MaxproHealth</a>
+          <a class="mxp-button" href="/products">Explore Products</a>
+          <a class="mxp-button" href="/">Visit Home</a>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- DISCLAIMER -->
-  <section class="mxp-disclaimer">
+  <section class="mxp-disclaimer" aria-label="Important information and policies">
     <div class="mxp-container">
-
       <div class="mxp-disclaimer-inner">
-
-        <strong>Important:</strong>
-        K-Beauty content on MaxproHealth is provided for general
-        educational and informational purposes. Cosmetic products are
-        not intended to diagnose, treat, cure or prevent disease.
-        Individual skin responses vary. Always follow product
-        instructions and seek qualified medical or dermatological
-        advice for persistent or concerning skin problems.
-
+        <strong>Important information:</strong>
+        Product categories are provided for discovery and general information. Actual product availability, manufacturer participation, wholesale terms, distributor authorization, and commission arrangements must be confirmed separately. Product labeling, import, registration, and distribution requirements vary by market. MaxproHealth may receive compensation for certain business introductions or other activities where agreed and disclosed as applicable. Review our
+        <a href="/medical-disclaimer">Medical Disclaimer</a>,
+        <a href="/privacy-policy">Privacy Policy</a>,
+        <a href="/terms">Terms</a>, and
+        <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+        for relevant site policies.
       </div>
-
     </div>
   </section>
 
 </main>
 
-<!-- Shared Footer -->
 <div id="site-footer"></div>
-
-<!-- Global Scroll-to-top (scroll-top.html) -->
 <div id="site-scroll-top"></div>
 
 <script>
 (function () {
   "use strict";
 
-  /*
-   * IMPORTANT:
-   * header.html and footer.html are loaded with fetch().
-   * HTML inserted through innerHTML does NOT execute the
-   * <script> elements contained inside those files.
-   *
-   * Therefore this page initializes the shared header controls
-   * after header.html has been inserted.
-   */
-
-  const headerContainer =
-    document.getElementById("site-header");
-
-  const footerContainer =
-    document.getElementById("site-footer");
-
-  const root =
-    document.documentElement;
-
-  const scrollTopContainer =
-    document.getElementById("site-scroll-top");
-
-
-  /* ---------------------------------------------------------
-     Shared component loader
-  --------------------------------------------------------- */
+  const headerContainer = document.getElementById("site-header");
+  const footerContainer = document.getElementById("site-footer");
+  const root = document.documentElement;
+  const scrollTopContainer = document.getElementById("site-scroll-top");
 
   function loadComponent(container, file) {
-
     if (!container) {
-      return Promise.resolve();
+      return Promise.resolve("");
     }
 
     return fetch(file, {
@@ -1167,375 +866,159 @@ html.dark .mxp-card {
       cache: "no-cache"
     })
       .then(function (response) {
-
         if (!response.ok) {
-          throw new Error(
-            "Unable to load " + file
-          );
+          throw new Error("Unable to load " + file);
         }
-
         return response.text();
-
       })
       .then(function (html) {
-
         container.innerHTML = html;
-
         return html;
-
       })
       .catch(function (error) {
-
         console.error(error);
-
         container.innerHTML = "";
-
         return "";
-
       });
   }
 
-
-  /* ---------------------------------------------------------
-     Initialize shared header
-  --------------------------------------------------------- */
-
   function initializeHeader() {
-
-    const themeButton =
-      document.getElementById("mxpThemeButton");
-
-    const menuButton =
-      document.getElementById("mxpMenuButton");
-
-    const nav =
-      document.getElementById("mxpMainNav");
-
-    const languageButton =
-      document.getElementById("mxpLanguageButton");
-
-    const languageMenu =
-      document.getElementById("mxpLanguageMenu");
-
-
-    /* Theme button */
+    const themeButton = document.getElementById("mxpThemeButton");
+    const menuButton = document.getElementById("mxpMenuButton");
+    const nav = document.getElementById("mxpMainNav");
+    const languageButton = document.getElementById("mxpLanguageButton");
+    const languageMenu = document.getElementById("mxpLanguageMenu");
 
     if (themeButton) {
+      themeButton.addEventListener("click", function () {
+        const isDark = root.classList.toggle("dark");
 
-      themeButton.addEventListener(
-        "click",
-        function () {
+        try {
+          localStorage.setItem("mxp-theme", isDark ? "dark" : "light");
+        } catch (error) {
+          /* Continue without persistence. */
+        }
+      });
+    }
 
-          const isDark =
-            root.classList.toggle("dark");
+    if (menuButton && nav) {
+      menuButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+
+        const isOpen = nav.classList.toggle("open");
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      nav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          nav.classList.remove("open");
+          menuButton.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    if (languageButton && languageMenu) {
+      languageButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const isOpen = languageMenu.classList.toggle("open");
+        languageButton.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      languageMenu.querySelectorAll("[data-lang]").forEach(function (languageOption) {
+        languageOption.addEventListener("click", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          const language = languageOption.getAttribute("data-lang");
+
+          if (!language) {
+            return;
+          }
 
           try {
-
-            localStorage.setItem(
-              "mxp-theme",
-              isDark ? "dark" : "light"
-            );
-
+            localStorage.setItem("mxp-language", language);
           } catch (error) {
             /* Continue without persistence. */
           }
 
-        }
-      );
-
-    }
-
-
-    /* Mobile navigation */
-
-    if (menuButton && nav) {
-
-      menuButton.addEventListener(
-        "click",
-        function (event) {
-
-          event.stopPropagation();
-
-          const isOpen =
-            nav.classList.toggle("open");
-
-          menuButton.setAttribute(
-            "aria-expanded",
-            String(isOpen)
-          );
-
-        }
-      );
-
-
-      nav.querySelectorAll("a").forEach(
-        function (link) {
-
-          link.addEventListener(
-            "click",
-            function () {
-
-              nav.classList.remove("open");
-
-              menuButton.setAttribute(
-                "aria-expanded",
-                "false"
-              );
-
-            }
-          );
-
-        }
-      );
-
-    }
-
-
-    /* Language dropdown */
-
-    if (languageButton && languageMenu) {
-
-      languageButton.addEventListener(
-        "click",
-        function (event) {
-
-          event.preventDefault();
-
-          event.stopPropagation();
-
-          const isOpen =
-            languageMenu.classList.toggle("open");
-
-          languageButton.setAttribute(
-            "aria-expanded",
-            String(isOpen)
-          );
-
-        }
-      );
-
-
-      languageMenu
-        .querySelectorAll("[data-lang]")
-        .forEach(function (languageOption) {
-
-          languageOption.addEventListener(
-            "click",
-            function (event) {
-
-              event.preventDefault();
-              event.stopPropagation();
-
-              const language =
-                languageOption.getAttribute("data-lang");
-
-              if (!language) {
-                return;
-              }
-
-              try {
-
-                localStorage.setItem(
-                  "mxp-language",
-                  language
-                );
-
-              } catch (error) {
-                /* Continue without persistence. */
-              }
-
-              languageButton.textContent =
-                language.toUpperCase() + " ▾";
-
-              languageMenu.classList.remove("open");
-
-              languageButton.setAttribute(
-                "aria-expanded",
-                "false"
-              );
-
-              /*
-               * Language selection is currently UI state only.
-               * It does not falsely claim to translate the page.
-               */
-            }
-          );
-
+          languageButton.textContent = language.toUpperCase() + " ▾";
+          languageMenu.classList.remove("open");
+          languageButton.setAttribute("aria-expanded", "false");
         });
-
-
-      /* Restore saved language */
+      });
 
       try {
-
-        const savedLanguage =
-          localStorage.getItem("mxp-language");
+        const savedLanguage = localStorage.getItem("mxp-language");
 
         if (savedLanguage) {
-
-          languageButton.textContent =
-            savedLanguage.toUpperCase() + " ▾";
-
+          languageButton.textContent = savedLanguage.toUpperCase() + " ▾";
         }
-
       } catch (error) {
-        /* Use default EN. */
+        /* Use the default language. */
       }
 
-
-      /* Close language menu outside click */
-
-      document.addEventListener(
-        "click",
-        function (event) {
-
-          if (
-            !event.target.closest(
-              ".mxp-language"
-            )
-          ) {
-
-            languageMenu.classList.remove("open");
-
-            languageButton.setAttribute(
-              "aria-expanded",
-              "false"
-            );
-
-          }
-
+      document.addEventListener("click", function (event) {
+        if (!event.target.closest(".mxp-language")) {
+          languageMenu.classList.remove("open");
+          languageButton.setAttribute("aria-expanded", "false");
         }
-      );
+      });
 
-
-      /* Close dropdown with Escape */
-
-      document.addEventListener(
-        "keydown",
-        function (event) {
-
-          if (event.key === "Escape") {
-
-            languageMenu.classList.remove("open");
-
-            languageButton.setAttribute(
-              "aria-expanded",
-              "false"
-            );
-
-          }
-
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          languageMenu.classList.remove("open");
+          languageButton.setAttribute("aria-expanded", "false");
         }
-      );
-
+      });
     }
-
-
-    /* Active page */
 
     if (nav) {
+      const currentPage = window.location.pathname
+        .replace(/\/+$/, "")
+        .split("/")
+        .pop()
+        .replace(/\.html$/, "") || "index";
 
-      const currentPage =
-        window.location.pathname
-      .replace(/\/+$/, "")
-      .split("/")
-      .pop()
-      .replace(/\.html$/, "") || "index";
+      nav.querySelectorAll("a").forEach(function (link) {
+        const page = link.getAttribute("data-page");
 
-      nav.querySelectorAll("a").forEach(
-        function (link) {
-
-          const page =
-            link.getAttribute("data-page");
-
-          if (page === currentPage) {
-
-            link.classList.add("active");
-
-            link.setAttribute(
-              "aria-current",
-              "page"
-            );
-
-          }
-
+        if (page === currentPage) {
+          link.classList.add("active");
+          link.setAttribute("aria-current", "page");
         }
-      );
-
+      });
     }
-
   }
-
-
-  /* ---------------------------------------------------------
-     Initialize footer
-  --------------------------------------------------------- */
 
   function initializeFooter() {
-
-    const yearElement =
-      document.getElementById("mxpYear");
+    const yearElement = document.getElementById("mxpYear");
 
     if (yearElement) {
-
-      yearElement.textContent =
-        String(new Date().getFullYear());
-
+      yearElement.textContent = String(new Date().getFullYear());
     }
-
   }
 
-
-  /* ---------------------------------------------------------
-     Load shared components
-  --------------------------------------------------------- */
-
-  loadComponent(
-    headerContainer,
-    "header.html"
-  ).then(function () {
-
+  loadComponent(headerContainer, "header.html").then(function () {
     initializeHeader();
-
   });
 
-
-  loadComponent(
-    footerContainer,
-    "footer.html"
-  ).then(function () {
-
+  loadComponent(footerContainer, "footer.html").then(function () {
     initializeFooter();
-
   });
 
-
-  /* Global scroll-to-top: load scroll-top.html and activate its script. */
-  loadComponent(
-    scrollTopContainer,
-    "scroll-top.html"
-  ).then(function () {
-
+  loadComponent(scrollTopContainer, "scroll-top.html").then(function () {
     if (!scrollTopContainer) {
       return;
     }
 
-    scrollTopContainer
-      .querySelectorAll("script")
-      .forEach(function (oldScript) {
-
-        const newScript =
-          document.createElement("script");
-
-        newScript.textContent =
-          oldScript.textContent;
-
-        oldScript.replaceWith(newScript);
-
-      });
-
+    scrollTopContainer.querySelectorAll("script").forEach(function (oldScript) {
+      const newScript = document.createElement("script");
+      newScript.textContent = oldScript.textContent;
+      oldScript.replaceWith(newScript);
+    });
   });
-
 })();
 </script>
 
